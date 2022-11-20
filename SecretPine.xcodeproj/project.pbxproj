@@ -11,6 +11,11 @@
 		7279C2712925316900E27577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C2702925316900E27577 /* ContentView.swift */; };
 		7279C2732925316A00E27577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7279C2722925316A00E27577 /* Assets.xcassets */; };
 		7279C2762925316A00E27577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7279C2752925316A00E27577 /* Preview Assets.xcassets */; };
+		7279C27E292531A100E27577 /* MCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C27D292531A100E27577 /* MCService.swift */; };
+		7279C2812925325000E27577 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C2802925325000E27577 /* Constants.swift */; };
+		7279C2842925328B00E27577 /* PineAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C2832925328B00E27577 /* PineAwaitView.swift */; };
+		7279C2862925332200E27577 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C2852925332200E27577 /* MessagesView.swift */; };
+		7279C28929278DC800E27577 /* HostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279C28829278DC800E27577 /* HostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		7279C2702925316900E27577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7279C2722925316A00E27577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7279C2752925316A00E27577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7279C27D292531A100E27577 /* MCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCService.swift; sourceTree = "<group>"; };
+		7279C2802925325000E27577 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7279C2832925328B00E27577 /* PineAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PineAwaitView.swift; sourceTree = "<group>"; };
+		7279C2852925332200E27577 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		7279C2872925364E00E27577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7279C28829278DC800E27577 /* HostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,10 @@
 		7279C26D2925316900E27577 /* SecretPine */ = {
 			isa = PBXGroup;
 			children = (
+				7279C2872925364E00E27577 /* Info.plist */,
+				7279C2822925327D00E27577 /* Views */,
+				7279C27F2925323F00E27577 /* Common */,
+				7279C27C2925319300E27577 /* Services */,
 				7279C26E2925316900E27577 /* SecretPineApp.swift */,
 				7279C2702925316900E27577 /* ContentView.swift */,
 				7279C2722925316A00E27577 /* Assets.xcassets */,
@@ -65,6 +80,32 @@
 				7279C2752925316A00E27577 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7279C27C2925319300E27577 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7279C27D292531A100E27577 /* MCService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7279C27F2925323F00E27577 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7279C2802925325000E27577 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7279C2822925327D00E27577 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7279C2832925328B00E27577 /* PineAwaitView.swift */,
+				7279C2852925332200E27577 /* MessagesView.swift */,
+				7279C28829278DC800E27577 /* HostView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7279C27E292531A100E27577 /* MCService.swift in Sources */,
 				7279C2712925316900E27577 /* ContentView.swift in Sources */,
+				7279C2862925332200E27577 /* MessagesView.swift in Sources */,
+				7279C2842925328B00E27577 /* PineAwaitView.swift in Sources */,
 				7279C26F2925316900E27577 /* SecretPineApp.swift in Sources */,
+				7279C2812925325000E27577 /* Constants.swift in Sources */,
+				7279C28929278DC800E27577 /* HostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +316,15 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecretPine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SecretPine;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Это нужно, чтобы обнорожить Сосну";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +349,15 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecretPine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SecretPine;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Это нужно, чтобы обнорожить Сосну";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
